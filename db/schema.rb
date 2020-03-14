@@ -26,7 +26,7 @@ ActiveRecord::Schema.define(version: 2020_03_13_135246) do
     t.string "station"
     t.string "date", null: false
     t.string "time", null: false
-    t.integer "numberl", null: false
+    t.integer "number", null: false
     t.integer "money", null: false
     t.string "memo", null: false
     t.integer "user_id"
@@ -36,6 +36,7 @@ ActiveRecord::Schema.define(version: 2020_03_13_135246) do
 
   create_table "users", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.string "nickname", null: false
+    t.string "subname", null: false
     t.integer "age", null: false
     t.integer "gender", null: false
     t.string "image", null: false
