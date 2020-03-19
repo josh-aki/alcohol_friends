@@ -25,9 +25,9 @@
 
 
   .center
-    tweet一覧
-
-
+    .search-box
+      = form_with(url: '#', local: true, method: :get, class: "search-form") do |form|
+        = form.text_field :keyword, placeholder: "キーワードを入力", class: "input-info"
+        
   .right
     
-
