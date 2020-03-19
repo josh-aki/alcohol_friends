@@ -1,1 +1,33 @@
-トップページ
+.container 
+  .left
+    .left__bar
+      .left__bar__title
+        nomitomo
+      .left__bar__nav
+        %i.home-icon
+        = icon('fas', 'fa-home-lg-alt', class: 'icon')
+        = link_to('Home', root_path, class: 'home-link')
+        
+      .left__bar__search-list
+        %h1 主要駅から探す
+        %ul.main-stations
+          %li.station-name
+            = link_to('@渋谷', '#', class: 'search-result-link') 
+          %li.station-name
+            = link_to('@新宿', '#', class: 'search-result-link') 
+          %li.station-name
+            = link_to('@池袋', '#', class: 'search-result-link') 
+          %li.station-name
+            = link_to('@品川', '#', class: 'search-result-link') 
+
+      .left__bar__calender
+        %h1 カレンダー
+
+
+  .center
+    tweet一覧
+
+
+  .right
+    
+
