@@ -121,7 +121,17 @@
             .desired-place__station
               .span 駅：
 
-
   .right
-
+    .right__box
+      .current-user
+        .current-user__image
+        .current-user__detail
+          .current-user__detail__nickname
+            current-user__nickname
+          .current-user__detail__address
+            current-user__address
     
+      .downside
+        .invite-friends
+          = link_to('飲み友を募集する', '#', class: 'invite-btn') 
+          

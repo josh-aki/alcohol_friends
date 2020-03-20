@@ -132,6 +132,43 @@
   .right{
     width: 30%;
     background-color:#FFFACD;
+
+    &__box{
+      margin: 30px;
+    
+      .current-user{
+        margin: auto;
+        height: 250px;
+        width: 350px;
+        background-color: #fffdf0;
+        &__image{
+          height: 80px;
+          width: 80px;
+          border-radius: 100%;
+          background-color: cornflowerblue;
+          margin: auto;
+        }
+        &__detail{
+          text-align: center;
+          margin-top: 20px;
+        }
+      }
+      .downside{
+        .invite-friends{
+          text-align: center;
+          margin-top: 100px;
+          .invite-btn{
+            text-decoration: none;
+            font-size: 20px;
+            font-weight: 600;
+            border-radius: 5px;
+            color: white;
+            background-color: #FFCC00;
+            padding: 8px;
+          }
+        }
+      }
+    }
   }
 }
 
