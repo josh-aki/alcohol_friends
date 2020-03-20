@@ -6,7 +6,12 @@
 
   .left{
     width: 30%;
-    background-color: #fffdf0;
+    height: 100vh;
+    background-color: #FFFACD;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 1;
 
     &__bar{
       padding: 40px;
@@ -43,7 +48,7 @@
         margin-top: 30px;
         height: 250px;
         width: 350px;
-        background-color: #FFFACD;
+        background-color: #fffdf0;
 
       }
     }
@@ -51,9 +56,8 @@
 
   .center{
     width: 40%;
-    // background-color:#fffdf0;
-    // border-left: solid 0.1px#FFCC00;
-    // border-right: solid 0.1px#FFCC00;
+    border-left: solid 0.1px #FFCC00;
+    border-right: solid 0.1px #FFCC00;
     
     .search-box{
       height: 100px;
@@ -61,6 +65,9 @@
       background-color: #FFFACD;
       position: fixed;
       z-index: 1;
+      border-left: solid 0.1px #FFCC00;
+      border-right: solid 0.1px #FFCC00;
+      border-bottom: solid 0.1px #FFCC00;
 
       .search-form{
         display: flex;
@@ -74,14 +81,70 @@
         }
       }
     }
+
+    .tweets-list{
+      border: solid 0.5px #FFCC00;
+      background-color: #FFFACD;
+      padding: 10px 10px 0px;
+      margin-top: 100px;
+      height: calc(100vh - 100px);
+      overflow: auto;
+
+      .one-tweet-box{
+        display: flex;
+        background-color: #fffdf0;
+        margin-bottom: 10px;
+        padding: 20px;
+
+        &__left{
+          .user-image{
+            height: 80px;
+            width: 80px;
+            border-radius: 100%;
+            background-color: cornflowerblue;
+          }
+        }
+        &__right{
+          margin-left: 20px;
+          .tweet-date{
+            background-color: white;
+          }
+          .user-info{
+            display: flex;
+            margin-top: 20px;
+
+            &__nickname{
+              background-color: white;
+            }
+            &__subname{
+              background-color:white;
+            }
+          }
+          .text-form{
+            margin-top: 10px;
+            height: 50px;
+            width: 300px;
+            background-color: white;
+          }
+
+          .desired-place{
+            background-color: white;
+            display: flex;
+            &__area{
+            }
+            &__station{
+              margin-left: 100px;
+            }
+          }
+
+        }
+      }
+    }
   }
-
-
 
   .right{
     width: 30%;
-    background-color:#fffdf0;
-    // background-color: #fdb913;
+    background-color:#FFFACD;
   }
 }
 
